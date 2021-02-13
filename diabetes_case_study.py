@@ -31,7 +31,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,
 
 # build a classifier
 clf_rf = RandomForestClassifier()
-
+ 
 # Set up the hyperparameter search
 param_dist = {"max_depth": [3, None],
               "n_estimators": list(range(10, 200)),
